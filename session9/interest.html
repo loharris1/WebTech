@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link rel="stylesheet" href="session4stylesheet.css" type="text/css" />
+    <style> 
+        h1{text-align: center; font-family: sans-serif; font-size: 36pt; color: darkgreen; text-transform: uppercase}
+        p{font-family: sans-serif; font-size: 14pt; text-align: center; color: white;}
+        .interests a:hover{font-size: 120%;}
+        .bord1{background-color: palegreen;}
+        .bord2{background-color: paleturquoise;}
+        .bord3{background-color: peachpuff;}
+        h2{font-family: sans-serif; font-size: 20pt; border:yellow dotted 3px; padding: 25px; width: 10%; margin: 2px auto 10px auto; text-align: center; color: violet; font-style: italic; text-decoration: underline;}
+        body{background-color:#2d3129;}
+        .p1{float: right; word-wrap: normal;}
+            img{width:20%; margin: 0px; margin-left: 50px; border-color:rgb(206, 228, 211);padding:20px}
+        h2+p::first-letter{font-size: 160%; color:cornflowerblue;}
+        h1 {text-shadow: 5px 5px 3px red;}
+        h3 {text-align: left;}
+    </style>
+    <title>Logan's Interests</title>
+</head>
+<body>
+    <video width="500" src="french.mp4" controls autoplay></video>
+    <p>Source: https://www.youtube.com/watch?v=LUuTrrckFaI&list=RDMMU5iNR2TgwOc&index=3 </Source></p>
+    <!-- This is a page about my interests -->
+    <h1>My Interests</h1>
+    <p class="interests">My top interests are 
+        <a href="#anchor1">walking</a>, <a href="#anchor2">running</a>, and <a href="#anchor3">languages.</a></p>
+    <div class="bord1">
+    <h2 id="anchor1">Interest 1: Walking</h2>
+    <p>I like to walk in the mornings. Click on the image to be directed to an awesome walking article.
+    <a href= "https://www.active.com/walking/articles/forget-the-gym-why-a-brisk-walk-is-a-really-great-workout-4064"><img src="https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Article+Image+Update/Running/brisk+walk/carousel.jpg" alt ="Walking Picture" width="250"/></a>
+    </p>
+    </div>
+    <div class="bord2">
+    <h2 id="anchor2">Interest 2: Running</h2>
+    <!--The validator says that the h2 not allowed on elemnt div, why is this. My formatting for my h2 is not visible for the first letter. I have been trying to watch videos on why this is the case.  -->
+    <p>I like to run. I have attached an image to an article about it. To visit the article in a new tab, <a href="https://www.active.com/walking/articles/forget-the-gym-why-a-brisk-walk-is-a-really-great-workout-4064" target="_blank">click here.</a></p>
+    <img src= "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/japanese-teen-women-are-running-in-preparation-for-royalty-free-image-1597939230.jpg" alt="Flags" width="250">
+    </div>
+    <div class = "bord3">
+        <h2 id="anchor3">Interest 3: Languages</h2>
+  <p>I can speak 15 languages. <br> Maybe not, but it's okay.</p> 
+    <img src="world-languages-flags.jpg" alt="map" width="200" usemap="#image-map">
+    <map name="image-map">    
+        <area target="image-map" alt="UK" title="UK" href="https://en.wikipedia.org/wiki/United_kingdom" coords="30,83,203,84" shape="rect"> 
+        <area target="image-map" alt="Germany" title="Germany" href="https://en.wikipedia.org/wiki/Germany" coords="20,43,200,44" shape="rect">   
+    </map>
+    <h3><b>Languages I speak:</b></h3>
+        <ol>
+        <li>Italian</li>
+        <li>Hebrew</li>
+        <li>Spanish</li>
+        <li>Welsh English
+            <ul>
+                <li>Abercraf</li>
+                <li>Cardiff</li>
+                <li>Gower</li>
+            </ul>
+            </li>
+    </ol>
+    </div>
+    <br>
+    <p><a href="index.html">Click here to learn more about me!</a></p>
+    <p>&#169; 2021, Logan Harris </p>
+</body>
+</html>
+
