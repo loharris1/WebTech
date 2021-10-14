@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    <meta name="description" content="This site asks for feedback on my tour of Israel website. information on Israel's top concert venues and Israeli music artists.">
+    <meta name="keywords" content="Israel, Israeli music, Israeli concerts, Omer Adam, Eyal Golan, Israel events">
+
+    <style>
+    h1 {font-family: 'Courier New', Courier, monospace;}
+    p {font-family: 'Courier New', Courier, monospace;}
+    h3 {font-weight: bold;font-family: 'Courier New', Courier, monospace; font-size: 25px;}
+    td {padding-right: 40px;font-family: 'Courier New', Courier, monospace;}
+    body {background-color: lavender;}
+    form {margin: 0 auto; width:370px;}
+    textarea {font-family: 'Courier New', Courier, monospace;}
+    i {color: lavender;}
+    </style>
+
+
+</head>
+<body>
+    <h1 style="font-size:32px; color: rgb(0, 0, 0); border-style:solid; border-color: black;padding: 25px; background-color: rgb(255, 199, 241); margin: 25px 30% 35px 30%">CONTACT ME</h1>
+    <br>
+    <div class = "navbar">
+        <ul> 
+        <li style="padding-left:21%"><a href="index.htm" class="Active">Home</a></li>
+
+        <li class="Dropdown"><a href="#">Northern Israel</a>
+            <div class="Dropdown_Content">
+                <a href="nazareth.html">Nazareth</a>
+                <a href="haifa.html">Haifa</a>
+                <a href="seaofgalilee.html">Sea of Galilee</a>
+                <a href="hostelliving.html">• Hostels</a>
+
+            </div>
+        </li>
+
+        <li class="Dropdown"><a href="#">Central Israel</a>
+            <div class="Dropdown_Content">
+                <a href="telaviv.html">Tel Aviv</a>
+                <a href="concertsartists.html">• Concerts & Artists</a> 
+                <a href="deadsea.html">Dead Sea</a>
+                <a href="masada.html">Masada</a>
+                <a href="jerusalem.html">Jerusalem</a>
+            </div>
+        </li>
+
+        <li class="Dropdown"><a href="#">Southern Israel</a>
+            <div class="Dropdown_Content">
+                <a href="eilat.html">Eilat</a>
+            </div>
+        </li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="contactme.html">Contact Me</a></li>
+        </ul>
+    </div>
+
+    <!--This will start the survey-->
+        <h3 style="font-size: 25px;text-align: center;"> Thank You Survey</h3>
+        <h1 style="text-align: center;font-size: 17px; border-style:solid; padding: 25px; margin: 35px 39% 35px 39%">
+          Please complete the following survey. <br> We'd love to know what you thought of the site!<br> When
+          you are done, please click the Submit button.
+        </h1>
+        <form
+          action="http://wtspring13sec2.babson.edu/gordon/mailer.php"
+          method="POST">
+          <table>
+            <tr>
+              <td>
+                First name:<input
+                  type="text"
+                  name="firstname"
+                  maxlength="100"
+                  value=""
+                />
+              </td>
+              <td>
+                Last name:<input
+                  type="text"
+                  name="lastname"
+                  maxlength="100"
+                  value=""
+                />
+              </td>
+            </tr>
+          </table>
+          <p>
+            Gender: Male <input type="radio" name="gender" value="male" /> Female
+            <input type="radio" name="gender" value="female" />
+          </p>
+          <p>
+            Have you ever been to Israel?
+            <select name="grade">
+              <option value="A">Yes</option>
+              <option value="B">No</option>
+            </select>
+          </p>
+    
+          <table>
+            <tr>
+              <td rowspan="3">What part of Israel have you found the most interesting?</td>
+              <td><input type="checkbox" name="img" value="images" />&#8593;<i>ii</i>North</td></tr>
+              <tr><td><input type="checkbox" name="css" value="css" />&#8593;<i>i</i>Central</td></tr> 
+            <tr><td><input type="checkbox" name="tables" value="tables"/>&#8593;<i>ii</i>South</td></tr>
+          </table>
+          <p>Please ask any questions you have about Israel:
+    <br>
+    <textarea name="comments" rows="5" cols="45">Questions/Comments...</textarea></p>
+    <p style="text-align:left"><input type="submit" name="Submit" value="Submit" />&nbsp;&nbsp;&nbsp;
+      <input type="reset" name="Reset" value="Reset" /></p>
+        </form>
+</body>
+</html>
