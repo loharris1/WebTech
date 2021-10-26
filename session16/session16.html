@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="session4stylesheet.css" type="text/css"/>
+    <title>All About Logan</title>
+    <style>
+    body{background-color:#f7e6e6;font-family:'courier new';text-align:center;margin:100px 50px 100px 50px}h1{color:#000000cb;text-align:center}img{border:42px;border-color:rgb(19, 16, 190);padding:20px}p{border:rgb(0, 0, 0);border-width:2px;border-style:outset}
+    p{display: block;margin-block-start: 1em;margin-block-end: 1em; margin-inline-start: 0px;margin-inline-end: 0px;text-align: center;}
+    p{width: 70%;float: left;margin-left: 1%; margin-right: 1%;padding: 10px;}
+    .redbord {border: 6px solid purple;}
+    #para1 {border: 6px solid orangered;}
+    
+
+    </style>
+     <script>
+        var myh1 = new Array("red", "orange", "yellow", "green", "blue", "indigo", "violet");
+        var counter=0
+            function changeColor() 
+        {
+            document.getElementById("h").style.color=myh1[counter];
+            counter=counter+1
+            if (counter == myh1.length){
+                counter=0
+            }
+            setTimeout("changeColor()",500);
+        }
+        </script>
+   
+</head>
+
+<body onload="changeColor()">
+    <h1 id= "h"><b>⭐I am Logan Harris⭐</b></h1>
+   
+    <p id="para1"><b>Here is an image of me:</b> 
+    
+        <img src="logan.jpg" alt="image of me"> 
+    </p>
+    <p><b>My home town is Montvale, NJ. The best way to contact me is my school email.</b></p>
+ 
+    <p> <b>Something <i> interesting </i> about me is I can speak Italian. <br> I learned this in high school. </b></p>
+   
+    <p><a href="interests.html">Click here to learn more about me!</a></p>
+
+</body>
+</html>
