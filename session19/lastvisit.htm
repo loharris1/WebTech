@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Visit</title>
+    <script>
+        function setCookie(cName, cValue)
+            {
+                var today = new Date()
+                var expireDate = new Date(today.getFullYear()+1, 
+                today.getMonth(), today.getDate())
+                document.cookie = cName + "=" + cValue + 
+                ";expires="+ expireDate.toGMTString() 
+            }
+        
+            function readCookie(cName)
+            {
+                c=document.cookie
+                var s=c.indexOf(cName)
+                if (s==-1) return null;
+                var cs=c.substring(s)
+                var e=cs.indexOf(";")
+                if (e != -1) {
+                    cs = cs.substring(0,e)
+                            }
+                cookieParts=cs.split("=")
+                return cookieParts[1]
+            }
+
+        function checkcookies(){
+            var last = readCookie("lastVisit");
+            if(last==null){
+                document.getElementById("words").innerHTML="First visit"
+            }
+            else alert(readCookie("lastVisit"))
+            var now=new Date()
+            setCookie("lastVisit",now.toString())
+        }
+    </script>
+</head>
+<body onload="checkcookies()">
+        <p id="words"></p>
+</body>
+</html>
