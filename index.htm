@@ -1,36 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>session15</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
-	<script>
- 		function clickme() {
-        var x = Math.floor(Math.random() * 501) + "px";
-        var y = Math.floor(Math.random() * 501) + "px";
-        var button1 = document.getElementById("but");
-        button1.style.left = x;
-        button1.style.top = y;
-        var newtext = new Array(
-          "Click Me",
-          "Move Me",
-          "Click Here",
-          "Button",
-          "Next"
-        );
-        button1.innerHTML = newtext[Math.floor(Math.random() * 5)];
-     	}
 
-	</script>
-	
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>Session22</title>
+
 	<style>
-         #but {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-      }
-        </style>
-</head>
-<body>
-	<button id="but" onclick="clickme()">Click Me</button>
-</body>
+	/* Your styles go here */
+	</style>
+	
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<script>
+	$(function(){
+	   // jQuery methods go here...
+
+	$(".hide").click(function(){
+		$("tr:odd").hide()});
+	$("tr").click(function(){
+		$(this).fadeOut(3000)});
+	$(".show").click(function(){
+		$("*").show()
+		$("tr:odd").css("background-color","yellow")})
+	});
+	/* Your additional JavaScript goes here */
+	</script>
+  </head>
+  <body>
+	<!-- Your HTML goes here -->
+	<table>
+		<tr><td>0</td></tr>
+		<tr><td>1</td></tr>
+		<tr><td>2</td></tr>
+		<tr><td>3</td></tr>
+	</table>
+	<button class="hide">Hide Odd</button>
+	<button class="show">Show All</button>
+  </body>
 </html>
