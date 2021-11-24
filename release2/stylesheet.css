@@ -1,0 +1,11 @@
+h1{font-family: 'Courier New';font-size: 60px; text-align: center; background-color: rgb(253, 0, 219);}
+.navbar {position: sticky;top: 0px; left: 0px; width: 100%; font-family: 'Courier New'; font-size: 15px; padding-left: 0%;}
+.navbar ul {list-style-type: none; margin: 0; padding: 0;overflow: auto; background-color: blue; border-radius: 5px;}
+.navbar li {float: left;}
+.navbar li a {display: inline-block; color: white; text-align: center; padding: 15px; text-decoration: none; min-width: 100px; font-weight: lighter;}
+.navbar a.Active {background-color: violet;}
+.navbar li a:hover, .Nav_Bar a.Active:hover {background-color: rgb(43, 211, 169);}
+.navbar .Dropdown_Content {display: none; position: absolute; background-color: red; min-width: 100px; z-index: 1;}
+.navbar .Dropdown_Content a {display: block; text-align: left;}
+.navbar li.Dropdown:hover .Dropdown_Content {display: block;}
+
